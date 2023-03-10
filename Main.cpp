@@ -20,7 +20,7 @@ int WINAPI wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, 
     HWND hWnd{ NULL };
     MSG Msg{ NULL };
 
-    cl.cbSize = sizeof(WNDCLASSEXA);
+    cl.cbSize = sizeof(WNDCLASSEXW);
     cl.hbrBackground = static_cast<HBRUSH>(GetStockObject(WHITE_BRUSH));
     cl.hCursor = LoadCursorW(NULL, IDC_ARROW);
     cl.hIcon = LoadIconW(NULL, IDI_APPLICATION);
